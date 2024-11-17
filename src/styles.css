@@ -1,5 +1,88 @@
 /* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: rebeccapurple;
-  }
-  
+    background-color: #FFF8E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+nav > button {
+    border: none;
+    padding: 20px 80px;
+    transition: 300ms;
+    background-color: #D32F2F;
+    color: #FFF8E1;
+}
+
+nav > button:hover {
+    filter: invert(1);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10svh;
+    padding: 10svh;
+    background-color: #424242;
+    color: #FFC107;
+    margin-block: 25px;
+    margin-inline: 15vw;
+}
+
+#content > * {
+    border: 10px solid #8E5C42;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: #D32F2F;
+    font-size: 36px;
+}
+
+img {
+    width: 400px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+#timings > p {
+    font-size: 16px;
+}
+
+#timings > ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 720px;
+}
+
+.card span {
+    font-size: 20px;
+}
+
